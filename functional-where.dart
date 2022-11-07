@@ -5,4 +5,20 @@ void main() {
     {'name': 'RM', 'group': 'BTS'},
     {'name': '뷔', 'group': 'BTS'}
   ];
+
+  print(people);
+
+  final blackPink = people
+      .where(
+        (element) => element['group'] == '블랙핑크',
+      )
+      .toList();
+  final bts = people
+      .where(
+        (element) => element['group'] == 'BTS',
+      )
+      .toList();
+
+  print(blackPink);
+  print(bts);
 }
